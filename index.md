@@ -164,4 +164,104 @@ to match your plans.  You may also want to change 'Day 1' and 'Day
 
 <h2 id="setup">Setup</h2>
 
-<p>TODO: Josh's instructions</p>
+### Installing Python and HTMap
+
+This guide will walk you through installing a personal (i.e., not "system") Python on a CHTC submit machine. Once you have a personal Python, you can install any packages you'd like, including HTMap.
+
+In particular, we will install a self-contained Python distribution called Anaconda. The particular flavor we will install is called Miniconda: it is a bare-bones Python, with just a few packages pre-installed. It comes with the conda package manager in addition to the standard pip.
+
+**WARNING**: Following these steps will install Python in such a way that it
+**prevents your ability to access the system Python**. If you rely on the system
+Python in your own work, contact us so we can work out a solution.
+
+#### Log into your submit machine
+
+First, you should log into your submit machine by whatever your normal login mechanism is (probably something like SSH or Putty).
+
+Go to your home directory.
+
+#### Download the Miniconda installer
+
+We can download the Miniconda installer from the command line. Run
+
+```bash
+$ wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+```
+(remember, you don't type the `$`, it's just indicating the command line prompt).
+
+You should see some output from `wget`.
+Once `wget` finishes downloading the file, run `ls -l` to check that you have a
+file named `Miniconda3-latest-Linux-x86_64.sh` in your home directory.
+
+#### Run the Miniconda installer
+
+Start the installer by running
+
+```bash
+$ bash Miniconda3-latest-Linux-x86_64.sh
+```
+
+Follow the instructions.
+- The default installation location is `/<your-home-directory>/miniconda3`.
+  This is fine; you may customize it if you wish.
+- You **do** want the installer to initialize Miniconda3 by running conda init.
+  This is not the default; you must answer `yes`.
+  
+#### Check that the Miniconda installation worked
+
+The installer has put the files in the right place, but we can't actually use
+them yet.
+Do **one** of the following:
+1. Run `source ~/.bashrc`
+1. Log off of the submit machine, then log back in.
+Once you have done one of the above, there are a few tests we can do to make
+sure the installation worked correctly.
+
+First, run `conda --help`.
+You should see a message like 
+```
+(base) [karpel@jupyter0000 ~]$ conda --help
+usage: conda [-h] [-V] command ...
+
+conda is a tool for managing and deploying applications, environments and packages.
+```
+`conda` is the Anaconda package manager. You can use it to install packages
+distributed by Anaconda, which include various Python packages like `numpy` or
+`matplotlib` that you could also install via `pip` (Python's own built-in package
+manager), but also include a wide variety of other tools.
+
+Next, run these two commands:
+```
+$ which python
+$ which pip
+```
+You should get output like this:
+```bash
+(base) [karpel@jupyter0000 ~]$ which python
+~/miniconda3/bin/python
+(base) [karpel@jupyter0000 ~]$ which pip
+~/miniconda3/bin/pip
+```
+The paths should point into the installation directory you
+gave to the installer above (`~/miniconda3` being the default).
+
+#### Install HTMap
+
+HTMap can be installed via `pip`.
+Run
+```bash
+$ pip install htmap
+```
+You should see output from `pip`.
+
+#### Check that HTMap works
+
+To check that HTMap installed correctly, being a Python session by running `python`.
+You are now in a Python "REPL" (read-eval-print-loop) and can run Python commands.
+For now, just run the following command in the REPL:
+
+```
+>>> import htmap; print(htmap.version())
+```
+You should see output like `HTMap version 0.4.3` (numbers may not match).
+If you did, HTMap is successfully installed, and you're ready for the workshop!
