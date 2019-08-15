@@ -251,7 +251,7 @@ You should see output from `pip`.
 
 #### Check that HTMap works
 
-To check that HTMap installed correctly, being a Python session by running `python`.
+To check that HTMap installed correctly, begin a Python session by running `python`.
 You are now in a Python "REPL" (read-eval-print-loop) and can run Python commands.
 For now, just run the following command in the REPL:
 
