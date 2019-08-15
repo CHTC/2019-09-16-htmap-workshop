@@ -21,7 +21,7 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
 {% comment %}
 For a workshop please delete the following block
 {% endcomment %}
-<div class="alert alert-info" style="font-size: 80%;">
+<div class="alert alert-info" style="font-size: 150%;">
 If you are a researcher using CHTC's high throughput computing (HTC) system to submit and run jobs, we welcome you to attend this 
   workshop on the HTMap package. HTMap is a tool that can help you:
  <ul>
