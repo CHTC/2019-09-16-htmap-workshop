@@ -30,13 +30,15 @@ about your workshop and our administrator may contact you if we need any extra
 information.
 </div>
 
-{% if page.carpentry != site.carpentry %}
-<div class="alert alert-warning">
-You specified <code>carpentry: {{page.carpentry}}</code> in <code>index.md</code> and
-<code>carpentry: {{site.carpentry}}</code> in <code>_config.yml</code>. Make sure you edit both files. After editing <code>_config.yml</code>, you need to run <code>make serve</code> again to 
-see the changes take effect locally.
+<div class="row">
+  <div class="col-md-4"></div>
+  <div class="col-md-4">
+    <div class="alert alert-info">
+<h1><a href="https://docs.google.com/forms/d/e/1FAIpQLSf7L3kX_BklFyk1JhO8GlymaxsjpQrdQ_D8gvEwbx2qJqpAXw/viewform?usp=sf_link">Register Here</a></h1>
+    </div>
+  </div>
+    <div class="col-md-4"></div>
 </div>
-{% endif %}
 
 {% comment %}
 EVENTBRITE
@@ -57,10 +59,11 @@ displayed if the 'eventbrite' field in the header is not set.
 {% endif %}
 
 
-<h2 id="general">General Information</h2>
+TODO Pitch
 
-TODO: PITCH.
-TODO: link to registration
+https://docs.google.com/forms/d/1HcMi7oi8FAHr27hFYN8EwLjB_LLSCacv9vcgONzR2FQ/edit
+
+<h2 id="general">General Information</h2>
 
 {% comment %}
 LOCATION
@@ -157,7 +160,21 @@ to match your plans.  You may also want to change 'Day 1' and 'Day
 
 <h2 id="schedule">Schedule and Notes</h2>
 
-<p>TODO: schedule info and link to GoogleDoc</p>
+<div class="row">
+  <div class="col-md-6">
+    <h3>Schedule</h3>
+    <table class="table table-striped">
+      <tr><td>2:00-2:40</td> <td>Intro and Demonstration</td></tr>
+      <tr><td>2:40-3:10</td><td>Questions and Break</td></tr>
+      <tr><td>3:10-4:00</td><td>Extended Example</td></tr>
+			<tr> <td>4:00-5:00</td> <td>Optional Question Time with Josh</td> </tr>
+    </table>
+  </div>
+</div>
+
+<h3>Notes</h3>
+
+<p>During the workshop, we will put notes and resources into this Google Doc: [Google Doc for Notes](https://docs.google.com/document/d/1TxvPoePfi5BB-fuqB29GibRDlblotyRJLSc9iAnYY-k/edit?usp=sharing)
 
 <hr/>
 
