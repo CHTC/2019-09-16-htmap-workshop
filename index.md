@@ -30,14 +30,8 @@ If you are a researcher using CHTC's high throughput computing (HTC) system to s
   </ul>
 
 You do not have to use Python to attend! If you have some programming experience and use the HTC system, you are welcome to come.
-</div>
 
-<div class="row">
-  <div class="col-md-4"></div>
-  <div class="col-md-4">
 <h2><a href="https://docs.google.com/forms/d/e/1FAIpQLSf7L3kX_BklFyk1JhO8GlymaxsjpQrdQ_D8gvEwbx2qJqpAXw/viewform?usp=sf_link">Register Here</a></h2>
-  </div>
-    <div class="col-md-4"></div>
 </div>
 
 {% comment %}
