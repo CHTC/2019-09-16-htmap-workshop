@@ -143,8 +143,6 @@ Display the contact email address set in the configuration file.
   for more information.
 </p>
 
-<hr/>
-
 <div class="row">
   <div class="col-md-6">
     <h3>Schedule</h3>
@@ -160,7 +158,7 @@ Display the contact email address set in the configuration file.
 <h3>Notes</h3>
 
 <p>During the workshop, we will put notes and resources into this Google Doc: <a href="https://docs.google.com/document/d/1TxvPoePfi5BB-fuqB29GibRDlblotyRJLSc9iAnYY-k/edit?usp=sharing">Google Doc for Notes</a> 
-  <p>
+  </p>
 
 <hr/>
 
