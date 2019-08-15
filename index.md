@@ -21,21 +21,21 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
 {% comment %}
 For a workshop please delete the following block
 {% endcomment %}
-<div class="alert alert-danger">
-This is the workshop template. Delete these lines and use it to customize your
-own website. If you are running a self-organized workshop or have not put in a
-workshop request yet, please also fill in 
-<a href="{{site.amy_site}}/submit">this workshop request form</a> to let us know
-about your workshop and our administrator may contact you if we need any extra
-information.
+<div class="alert alert-info" style="font-size: 80%;">
+If you are a researcher using CHTC's high throughput computing (HTC) system to submit and run jobs, we welcome you to attend this 
+  workshop on the HTMap package. HTMap is a tool that can help you:
+ <ul>
+   <li>use Python to submit jobs</li>
+   <li>run Python code in CHTC</li>
+  </ul>
+
+You do not have to use Python to attend! If you have some programming experience and use the HTC system, you are welcome to come.
 </div>
 
 <div class="row">
   <div class="col-md-4"></div>
   <div class="col-md-4">
-    <div class="alert alert-info">
-<h1><a href="https://docs.google.com/forms/d/e/1FAIpQLSf7L3kX_BklFyk1JhO8GlymaxsjpQrdQ_D8gvEwbx2qJqpAXw/viewform?usp=sf_link">Register Here</a></h1>
-    </div>
+<h2><a href="https://docs.google.com/forms/d/e/1FAIpQLSf7L3kX_BklFyk1JhO8GlymaxsjpQrdQ_D8gvEwbx2qJqpAXw/viewform?usp=sf_link">Register Here</a></h2>
   </div>
     <div class="col-md-4"></div>
 </div>
