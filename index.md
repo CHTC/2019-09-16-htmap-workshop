@@ -58,11 +58,6 @@ displayed if the 'eventbrite' field in the header is not set.
 </iframe>
 {% endif %}
 
-
-TODO Pitch
-
-https://docs.google.com/forms/d/1HcMi7oi8FAHr27hFYN8EwLjB_LLSCacv9vcgONzR2FQ/edit
-
 <h2 id="general">General Information</h2>
 
 {% comment %}
@@ -150,16 +145,6 @@ Display the contact email address set in the configuration file.
 
 <hr/>
 
-{% comment %}
-SCHEDULE
-
-Show the workshop's schedule.  Edit the items and times in the table
-to match your plans.  You may also want to change 'Day 1' and 'Day
-2' to be actual dates or days of the week.
-{% endcomment %}
-
-<h2 id="schedule">Schedule and Notes</h2>
-
 <div class="row">
   <div class="col-md-6">
     <h3>Schedule</h3>
@@ -174,7 +159,8 @@ to match your plans.  You may also want to change 'Day 1' and 'Day
 
 <h3>Notes</h3>
 
-<p>During the workshop, we will put notes and resources into this Google Doc: [Google Doc for Notes](https://docs.google.com/document/d/1TxvPoePfi5BB-fuqB29GibRDlblotyRJLSc9iAnYY-k/edit?usp=sharing)
+<p>During the workshop, we will put notes and resources into this Google Doc: <a href="https://docs.google.com/document/d/1TxvPoePfi5BB-fuqB29GibRDlblotyRJLSc9iAnYY-k/edit?usp=sharing">Google Doc for Notes</a> 
+  <p>
 
 <hr/>
 
