@@ -159,6 +159,9 @@ Display the contact email address set in the configuration file.
 
 <h2 id="setup">Setup</h2>
 
+If you would like to follow along with the instruction via your own CHTC account, follow the instructions to 
+set up the necessary tools. 
+
 ### Installing Python and HTMap
 
 This guide will walk you through installing a personal (i.e., not "system") Python on a CHTC submit machine. Once you have a personal Python, you can install any packages you'd like, including HTMap.
