@@ -243,6 +243,35 @@ You should get output like this:
 The paths should point into the installation directory you
 gave to the installer above (`~/miniconda3` being the default).
 
+#### Install IPython
+
+The IPython REPL (read-eval-print-loop) is a way to run Python code interactively,
+without writing actual script files. We'll use it throughout the workshop. To
+install it, run
+```
+$ conda install ipython
+```
+It will ask you for confirmation to proceed after figuring out which packages to install.
+
+#### Check that IPython works
+
+To check that IPython installed correctly, begin an IPython session by running `ipython`.
+You are now in a Python "REPL" (read-eval-print-loop) and can run Python commands.
+For now, just run something like
+```
+>>> 1 + 1
+2
+```
+If you see the result (`2`) print out, you're ready to move on.
+
+If instead you got something like
+```
+The program 'ipython' is currently not installed. You can install it by typing:
+sudo apt install ipython
+```
+do **not** follow the instructions in that error message; instead, make sure you followed
+the instructions in this document correctly.
+
 #### Install HTMap
 
 HTMap can be installed via `pip`.
@@ -250,14 +279,13 @@ Run
 ```bash
 $ pip install htmap
 ```
-You should see output from `pip`.
+You should see output from `pip` as it works; it will not ask you for confirmation.
 
 #### Check that HTMap works
 
-To check that HTMap installed correctly, begin a Python session by running `python`.
-You are now in a Python "REPL" (read-eval-print-loop) and can run Python commands.
-For now, just run the following command in the REPL:
-
+To check that HTMap installed correctly, begin an IPython session by running `ipython`
+from the command line.
+Run the following command in the REPL:
 ```
 >>> import htmap; print(htmap.version())
 ```
